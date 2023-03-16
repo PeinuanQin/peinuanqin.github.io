@@ -8,10 +8,14 @@ body {
 }
 
 a {
-  color: #1C9C94;
+  /*color: #1C9C94;*/
+  color: saddlebrown;
   text-decoration: none;
 }
 
+/*p{*/
+/*  color: black;*/
+/*}*/
 a:hover {
   opacity: 0.5;
 }
@@ -51,6 +55,7 @@ header img {
 h1 {
   text-transform: uppercase;
   margin: 1em 0;
+  color: black;
 }
 
 h3 {
@@ -82,6 +87,7 @@ main section:not(:last-child) {
 
 a .fab {
   color: white;
+  /*color: white;*/
 }
 
 .course, .skills {
@@ -134,7 +140,7 @@ a .fab {
 }
 
 ul.job-description li:before{
-  content: "✔";
+  content: "►";
   padding-right: 0.5em;
   color: #509e98;
 }
@@ -168,4 +174,8 @@ footer {
   footer {
     text-align: center;
   }
+}
+
+p{
+  color: black;
 }
