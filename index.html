@@ -1,8 +1,225 @@
-﻿<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-<meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <title>CV - Ocat</title>
+  <meta name="description" content="simple CV example created with HTML and CSS">
+  <meta name="author" content="Fly Nerd">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<p>hello</p>
+  <header>
+    <div>
+      <img src="./img/avatar.jpg" />
+    </div>
+    <h1>Peinuan Qin</h1>
+    <section>
+      <p>My name is Qin Peinuan, and I am currently a third-year Master's student in Software Engineering at the University of Melbourne. During my time at the university, I have taken advantage of my vacation periods to work as a research assistant in various academic institutions, focusing on the field of Artificial Intelligence.
+
+<p>In 2020, I had the opportunity to conduct research on knowledge distillation under the guidance of Professor <a href="http://www.rongpan.net/">Rong Pan</a> from Sun Yat-sen University. From 2021 to 2022, I participated in the ReadyGo project, a collaboration between the Chinese Academy of Sciences and <a href="https://www.cas-ruiyi.com/">CAS-Ruiyi</a> . Under the supervision of Researcher <a href="https://lcs.ios.ac.cn/~xiangmin/">Xiangmin Fan</a> , I carried out research related to "Assisted Diagnosis of Neurodegenerative Diseases Using Artificial Intelligence."
+      From 2022 to 2023, I have been working on Natural Language Processing (NLP) research under the guidance of Professor <a href="https://www.sigs.tsinghua.edu.cn/zht_en/main.htm">Haitao Zheng</a> at Tsinghua University.</p>
+<!--      <a href="" target="_blank">-->
+<!--        <i class="fab fa-facebook-f"></i>-->
+<!--      </a>-->
+<!--      <a href="https://www.twitter.com/flynerdpl/" target="_blank">-->
+<!--        <i class="fab fa-twitter"></i>-->
+<!--      </a>-->
+      <a href="https://github.com/PeinuanQin?tab=repositories" target="_blank">
+        <i class="fab fa-github-alt"></i>
+      </a>
+<!--      <a href="https://www.instagram.com/flynerdpl/" target="_blank">-->
+<!--        <i class="fab fa-instagram"></i>-->
+<!--      </a>-->
+      <a href="https://www.linkedin.com/in/%E5%9F%B9%E6%9A%96-%E7%A7%A6-2759301b3/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="./img/weixin.jpg" target="_blank">
+        <i class="fab fa-weixin"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+
+    <section>
+      <h3>Education</h3>
+      <article>
+        <div class='school'>
+          <span>2021-2023</span> <strong>University of Melbourne</strong>
+        </div>
+        <div class="descrition">
+          Master Degree of Software Engineering
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span>2016-2020</span> <strong>China University of Geosciences (Wuhan)</strong>
+        </div>
+        <div>
+          Bachelor Degree of Electronic Information Engineering
+        </div>
+      </article>
+    </section>
+    <section>
+<!--      <h3>Courses & Workshops</h3>-->
+      <h3>Research Experiences</h3>
+
+      <article>
+        <div class='job-title'>
+          <span>Nov 2022-present</span> <strong>Tsinghua University</strong><br> <strong>Position:</strong> Research Assistant <br> <strong>Position:</strong> Generation of movie commentary & Punctuation addition task for complex texts.
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> Python / Pytorch </p>
+          <ul class="job-description">
+            <li>Collected 359405 commentaries and processed to build a 173M dataset. Took GPT-2 as backbone and
+combined title, summary of movies for movie commentary generation.</li>
+            <li>Proposed a comprehensive end-to-end trained Chinese corpus punctuation addition model. Collected and
+processed 2G+ Chinese texts in over 15 major categories and trained the model.</li>
+            <li>The generated narration fits the main content of the film and flows logically. Built a preliminary
+punctuation addition model for multi-category texts (still updating). Thesis is in preparation.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <article>
+        <div class='job-title'>
+          <span>Nov 2021-Jun 2022</span> <strong>Chinese Academy of Sciences</strong><br> <strong>Position:</strong> Research Assistant <strong> <br> Theme:</strong>  Deep learning based motion assessment system development (ReadyGo).
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> Python / Pytorch </p>
+          <ul class="job-description">
+            <li>Collected patients’ motion data with Kinect, followed by data smooth and filtering.</li>
+            <li>Proposed a gait annotation method. Led the annotation, data cleaning & visualization tools development.</li>
+            <li>Proposed a sequential-based gait quantitive assessment algorithm with rich spatial-temporal features and
+gait semantic segmentation.</li>
+            <li>Proposed <em>Key Semantic Positioning Accuracy</em> to evaluate model ability more comprehensively instead of
+relying only on precision, recall, and f1-score.</li>
+            <li>Attained precise gait parameters and decreased the error rate of parameter calculation to 3.17%.
+Produced <a href="https://drive.google.com/file/d/1gMWYTWEaSyFkQgFSAJ1HPfKGkx27o9Vn/view?usp=sharing">Deep Learning Assisted Gait Parameter Assessment of Neurodegenerative Diseases: Model Development and Validation</a> and submitted to JMIR. ReadyGo have received Chinese national medical device registration and is used for commercial purposes.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class='job-title'>
+          <span>Nov 2021-Jun 2022</span> <strong>Sun Yat Sen University</strong><br> <strong>Position:</strong> Research Assistant <strong> <br> Theme:</strong> Knowledge distillation method engineering.
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> Python / Pytorch / Keras</p>
+          <ul class="job-description">
+            <li> Investigated the influencing factors of knowledge distillation. Conducted many experiments on distillation
+structure and mode. Proposed to model and fuse features from different levels and distilled the aggregation
+information and generated a research report <a href="https://drive.google.com/drive/u/1/my-drive">MFFD: Multi-scale feature fusion distillation.</a> </li>
+            <li>Proposed a lightweight shared-mask attention mechanism and a multi-level attention structure and produced
+a journal paper <a href="https://ieeexplore.ieee.org/abstract/document/9905593"> MLAN: Multi-Level Attention Network.</a> </li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class='job-title'>
+          <span>Winter 2018</span> <strong>UC Berkeley</strong><br> <strong>Position:</strong> Research Assistant <strong> <br> Theme:</strong> The application of traditional machine learning in brainwave classification & network security.
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> Python </p>
+          <ul class="job-description">
+            <li>Studied and practiced traditional machine learning algorithms and evaluation methods.</li>
+            <li> Peformed domain analysis (with FFT) and denoising for brainwave signals.</li>
+            <li>Extracted brainwave features and reduced features by PCA.</li>
+            <li>Visualized signal and features and analysed confusion matrix to measure the classification model effect.</li>
+            <li> Improved the classification result by 5% on given dataset compared to the baseline.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h3>Project Experience</h3>
+      <article>
+        <div class='job-title'>
+          <strong> ReadyGO </strong><br>
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>
+          <ul class="job-description">
+            <p>Built a motion assessment platform based on deep learning models and the patient’s 3D motion data
+collected by Kinect. The device is already in use in major hospitals in China, helping middle-aged and elderly people
+with neurodegenerative diseases with contactless early diagnosis and rehabilitation.</p>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class='job-title'>
+          <strong> Agile Development </strong><br>
+        </div>
+        <div>
+          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / MongoDB / </p>
+          <ul class="job-description">
+            <p>Built and deployed a disease data website as an agile team scrum master. In this program,
+a Nodejs server is taken for normal requests and a Django server for chart generation. The front end was based on
+element-UI & Vue. Agile concept is used to drive projects forward, manage risk and build usable products iteratively.</p>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Good knowledge</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript ES5/6</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class='column'>
+          <h4>Basic knowledge</h4>
+          <ul>
+            <li>jQuery</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+            <li>Django</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>🇵🇱 Polish - Native speaker</p>
+          <p>🇬🇧 English - Proficient C1/C2</p>
+          <p>🇫🇷 French - Advanced - C1</p>
+          <p>🇪🇸 Spanish - Intermediate - B1/B2</p>
+          <p>🇩🇪 German - Elementary / Communicative - A2</p>
+        </div>
+      </div>
+    </section>
+
+
+<!--    <section>-->
+<!--      <h3>Experience</h3>-->
+<!--      <article>-->
+<!--        <div class='job-title'>-->
+<!--          <span>03.2018 - 06.2018</span> <strong>Tentacles Company</strong><br> <strong>Position:</strong> Web developer Intern-->
+<!--        </div>-->
+<!--        <div>-->
+<!--          <p><strong>Tech stack:</strong> HTML5 / CSS / JavaScript / jQuery</p>-->
+<!--          <ul class="job-description">-->
+<!--            <li>Develop web application for Octopoda departments</li>-->
+<!--            <li>Implement UI (front-end site) based on received graphic design and requirements</li>-->
+<!--            <li>Co-operate with the back-end team </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </article>-->
+<!--    </section>-->
+  </main>
+  <footer>
+    <p>Created by: <a href="https://www.flynerd.pl/">@flynerd</a>  / <a href="https://www.linkedin.com/in/ritalyczywek/">LinkedIn</a> / 2018 </p>
+  </footer>
 </body>
 </html>
