@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+p{
+  color: black;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway';
@@ -39,7 +43,8 @@ header {
   background-image: url('./img/bg.jpg');
   background-size: cover;
   /*background-position: fixed;*/
-  color: white;
+  /*color: white;*/
+  color: black;
 }
 
 header section {
@@ -75,7 +80,7 @@ main section:not(:last-child) {
 }
 
 .fab {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 50%;
   font-size: 1.5em;
   width: 1.5em;
@@ -86,7 +91,7 @@ main section:not(:last-child) {
 }
 
 a .fab {
-  color: white;
+  color: black;
   /*color: white;*/
 }
 
